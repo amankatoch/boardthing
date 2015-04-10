@@ -1,0 +1,20 @@
+<div id="clustered-cluster-body" class="cluster-body-collapsed">
+	<div id="cluster-action-container_<%= id %>" class="cluster-action-container" style="display:none">
+		<img id="cluster-settings-button_<%= id %>" src="/img/settings-small.png" border="0" class="board-settings-button" />
+		<div id="cluster-settings-menu_<%= id %>" class="cluster-settings-menu" style="display:none">
+			<div id="edit-title_<%= id %>" class="menu-item">Edit</div>
+		</div>
+	</div>
+	<% if (type.trim().toLowerCase() == "text") { %><div id="cluster-title_<%= id %>" class="title"><%= content.replace(/\n/g, '<br />') %></div><% } else { %><div class="cluster-image-container"><img src="/workspace/boards/cards/image/<%= workspaceId %>/<%= boardId %>/<%= id %>" class="card-content-image"  border="0" /></div><% if ((typeof title != 'undefined') && (title != null) && (title.trim().length > 0)) { %><div id="cluster-title_<%= id %>" class="title"><%= title %></div><% } %><% } %>
+	<div id="cluster-editable-title_<%= id %>" style="display:none">
+		<div id="editable-title-container"><% if (type.trim().toLowerCase() == "text") { %><textarea id="editable-title_<%= id %>" class="editable-title" style="resize:none;width:165px;" rows="1"><%= content %></textarea><% } else { %><textarea id="editable-title_<%= id %>" class="editable-title" style="resize:none;width:165px;" rows="1"><%= title %></textarea><% } %></div>
+	</div>
+	<div id="child-cards-container" class="child-cards-container">
+		<span id="card-count-container"><%= cards.length %></span>
+		<img id="child-cards-icon" src="/img/cards.png" border="0" />
+	</div>
+	<% if (parentIsVoting) { %>
+		<div id="vote-container" class="vote-container right"><% if (votesReceived == 0) { %><img id="add-vote" class="add-vote" src="/img/voteSelect.png" border="0" /><% } else { %><img id="add-vote" class="add-vote" src="/img/voteSelected.png" border="0" /><% } %><span id="vote-count" class="vote-count"><%= votesReceived %></span></div>
+	<% } %>
+	<div class="clear"></div>
+</div>

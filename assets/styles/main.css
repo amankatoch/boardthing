@@ -1,0 +1,95 @@
+#main-header {
+ 	height: 41px;
+}
+
+.board-layout-container {
+	position: absolute;
+	top: 42px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.board-navigation {
+	position: relative;
+	float: left;
+	width: 165px;
+	height: 100%;
+	text-align: center;
+	background: #EAE8DF;
+}
+
+.board-navigation #create-workspace-button {
+	margin-top: 15px;
+	padding-top: 8px;
+	padding-bottom: 6px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	font-weight: 400;
+	color: #FFF;
+	border-top: 1px solid #29ABE2;
+	border-bottom: 1px solid #29ABE2;
+	border-left: 1px solid #29ABE2;
+	border-right: 1px solid #29ABE2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #29ABE2;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.board-list-container {
+	position: relative;
+	margin-left: 165px;
+	height: 100%;
+	overflow-y: auto;
+}	
+
+/* board list */
+	
+	.workspace-list {
+		width: 100%;
+		border-collapse: collapse;
+		position: relative;
+		border-top: 1px solid #EAE8DF;
+	}
+	
+	.workspace-list th {
+		text-align: left;
+		font-weight: normal;
+		color: #8A8C8E;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		cursor: default;
+	}
+	
+	.workspace-list tr {
+		cursor: hand;
+		cursor: pointer;
+	}
+	
+	.workspace-list td {
+		border-top: 1px solid #EAE8DF;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: #222222;
+	}
+
+	.workspace-list td.select-workspace {
+		width: 5%;
+		text-align: center;
+	}
+	
+	.workspace-list td.shared {
+		color: #8A8C8E;
+	}
+	
+	.workspace-list td.workspace-title {
+		font-weight: bold;
+		width: 40%;
+	}
+	
+	.workspace-list td.workspace-owner {
+		width: 20%;
+	}

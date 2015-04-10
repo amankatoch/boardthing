@@ -1,0 +1,71 @@
+<div id="add-text-container" class="text-card-container" style="display:none;">
+	<textarea id="card-text" class="text-card-input"></textarea>
+	<button id="post-card" class="button">Post</button>
+	<img class="show-add-image-btn" src="/img/camera.png" border="0">
+	<input type="text" id="add-card-color-select" />
+	<div class="clear"></div>
+</div>
+<div id="edit-text-container" class="text-card-container" style="display:none;">
+	<textarea id="current-card-text" class="text-card-input"><% if ((card != null) && (card.type == "text")) { %><%= card.content %><% } %></textarea>
+	<button id="update-text-card" class="button">Update</button>
+	<input type="text" id="edit-card-color-select" />
+	<div class="clear"></div>
+</div>
+<div id="add-image-container" style="display:none;">
+	<div id="add-image-header" class="popup-multi-dialog-header">
+		<div id="upload-photo-header" class="popup-active-item">Upload an image</div>
+		<div id="link-to-photo-header" class="popup-inactive-item">Link an image</div>
+		<div class="clear"></div>
+	</div>
+	<div id="add-upload-image-body" class="add-image-body" style="display:block">
+		<div id="image-upload-container">
+			<input type="button" id="upload-image-select" class="button upload-image-btn"  onclick="$('#imageUpload').click()" value="Select Images..." /><input id="imageUpload" type="file" name="imageUpload" accept="image/*" multiple style="display: none;" />
+		</div>
+		<div id="selected-files-container" style="display:none"></div>
+		<div class="padded"><input type="text" id="photo-upload-title" placeholder="Optional image title" /></div>
+	    <div id="progress" class="progress" style="display:none;">
+	        <div class="progress-bar progress-bar-success"></div>
+	    </div>
+		<img class="show-add-text-btn" src="/img/card.png" border="0">
+		<input type="text" id="upload-card-color-select" />
+		<button id="upload-image-button" class="button add-image-btn">Upload</button>
+	</div>
+	<div id="add-linked-image-body" class="add-image-body" style="display:none">
+		<div class="padded"><input type="text" id="photo-url-location" placeholder="URL of the image" /></div>
+		<div class="padded"><input type="text" id="photo-url-title" placeholder="Optional image title" /></div>
+		<div id="loading-container" style="display:none">
+			<div id="squaresWaveG">
+				<div id="squaresWaveG_1" class="squaresWaveG"></div>
+				<div id="squaresWaveG_2" class="squaresWaveG"></div>
+				<div id="squaresWaveG_3" class="squaresWaveG"></div>
+				<div id="squaresWaveG_4" class="squaresWaveG"></div>
+				<div id="squaresWaveG_5" class="squaresWaveG"></div>
+				<div id="squaresWaveG_6" class="squaresWaveG"></div>
+				<div id="squaresWaveG_7" class="squaresWaveG"></div>
+				<div id="squaresWaveG_8" class="squaresWaveG"></div>
+				<div id="squaresWaveG_9" class="squaresWaveG"></div>
+				<div id="squaresWaveG_10" class="squaresWaveG"></div>
+				<div id="squaresWaveG_11" class="squaresWaveG"></div>
+				<div id="squaresWaveG_12" class="squaresWaveG"></div>
+				<div id="squaresWaveG_13" class="squaresWaveG"></div>
+				<div id="squaresWaveG_14" class="squaresWaveG"></div>
+				<div id="squaresWaveG_15" class="squaresWaveG"></div>
+				<div id="squaresWaveG_16" class="squaresWaveG"></div>
+			</div>
+		</div>
+		<img class="show-add-text-btn" src="/img/card.png" border="0">
+		<input type="text" id="link-card-color-select" />
+		<button id="add-image-button" class="button add-image-btn">Upload</button>
+	</div>
+	<div id="add-linked-error-body" class="add-image-body" style="display:none">
+		<div id="back-image-error" style="margin-bottom:5px"></div>
+		<button id="back-image-button" class="button add-image-btn">Back</button>
+	</div>
+</div>
+<div id="edit-image-container" class="edit-image-container" style="display:none;">
+	<div class="image-container"><img id="current-content-image" src="" class="edit-content-image" border="0" /></div>
+	<div id="edit-image-body"><input type="text" id="edit-image-title" class="image-title" placeholder="Optional image title" /></div>
+	<button id="update-image-card" class="button">Done</button>
+	<input type="text" id="edit-image-card-color-select" />
+	<div class="clear"></div>
+</div>

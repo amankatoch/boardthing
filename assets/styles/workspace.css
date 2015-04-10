@@ -1,0 +1,121 @@
+#header-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 25px;
+	background-color: #FFF;
+	min-width: 300px;
+	z-index: 13;
+	border-bottom: 1px solid #cccccc;
+}
+
+#header-bar #header-logo {
+	position: relative;
+	float: left;
+	height: 100%;
+	cursor: hand;
+	cursor: pointer;
+	z-index: 14;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#header-bar #view-board-map {
+	position: relative;
+	float: right;
+	margin-top: 5px;
+	margin-right: 14px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#header-bar #zoom-container {
+	position: relative;
+	float: right;
+	width: 35px;
+	font-size: 13px;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 8px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#header-bar #zoom-in-container { 
+	margin-right: 14px;
+}
+
+#header-bar .header-button-container {
+	position: relative;
+	float: right;
+	font-size: 13px;
+	background: #B3B3B3;
+	margin-top: 3px;
+	margin-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#header-bar .header-button-container > span {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: #fff;
+}
+
+/* board navigation */
+
+#north-board-navigation {
+	top: 30px;
+	left: 50%;
+}
+
+#south-board-navigation {
+	bottom: 30px;
+	left: 50%;
+}
+
+#east-board-navigation {
+	top: 50%;
+	right: 30px;
+}
+
+#west-board-navigation {
+	top: 50%;
+	left: 30px;
+}
+
+.workspace-navigation {
+    display:none;
+    position:fixed;
+	cursor: hand;
+	cursor: pointer;
+	z-index: 15;
+}
+
+#overlay {
+    display:none;
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.7);
+    border:1px solid #cecece;
+    z-index:999;
+    overflow: auto;
+}

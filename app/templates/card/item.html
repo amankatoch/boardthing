@@ -1,0 +1,16 @@
+<div id="card-body_<%= id %>" class="card-content">
+	<% if (!isLocked) { %>
+		<div id="card-action-container_<%= id %>" class="card-action-container" style="display:none">
+			<img id="card-settings-button_<%= id %>" src="/img/settings-small.png" border="0" class="board-settings-button" />
+			<div id="card-settings-menu_<%= id %>" class="card-settings-menu" style="display:none">
+				<div id="card-resize-button" class="menu-item">Resize</div>
+				<div id="undo-card-resize-button" class="menu-item"<% if (!width) { %> style="display:none"<% } %>>Undo Resizing</div>
+				<div id="card-lock-button" class="menu-item">Lock</div>
+				<div id="card-duplicate-button" class="menu-item">Copy</div>
+				<div id="card-delete-button" class="menu-item">Delete</div>
+			</div>
+		</div>
+	<% } %>
+	<% if (type.trim().toLowerCase() == "text") { %><div id="card-body-text" class="card-content-body"><%= content.replace(/\n/g, '<br />') %></div><% } 
+	else { %><div class="card-image-container"><img id="card-body-image_<%= id %>" class="card-content-image" border="0" /><% if ((typeof title != 'undefined') && (title != null) && (title.trim().length > 0)) { %><div id="card-image-title" class="card-image-title"><%= title %></div><% } %></div><% } %>
+</div>

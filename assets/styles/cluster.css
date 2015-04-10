@@ -1,0 +1,152 @@
+/* Cluster styles */
+
+.cluster-content-container {
+    position: absolute;
+    vertical-align: top;
+    min-width: 200px;
+    background-color: rgba(43,53,52,0.10);
+    -webkit-box-shadow: 0 1px 4px #333333;
+    -moz-box-shadow: 0 1px 4px #333333;
+    box-shadow: 0 1px 4px #333333;
+    z-index: 4;
+}
+
+.cluster-content-container-collapsed {
+    position: relative;
+    vertical-align: top;
+    width: 180px;
+    background-color: rgba(43,53,52,0.10);
+    -webkit-box-shadow: 0 1px 4px #333333;
+    -moz-box-shadow: 0 1px 4px #333333;
+    box-shadow: 0 1px 4px #333333;
+    z-index: 3;
+}
+
+.clustered-cluster-content-container {
+    position: relative;
+    vertical-align: top;
+    min-width: 200px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: rgba(43,53,52,0.10);
+    -webkit-box-shadow: 0 1px 4px #333333;
+    -moz-box-shadow: 0 1px 4px #333333;
+    box-shadow: 0 1px 4px #333333;
+    z-index: 3;
+}
+
+.clustered-cluster-content-container-collapsed {
+    position: relative;
+    vertical-align: top;
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    background-color: rgba(43,53,52,0.10);
+    -webkit-box-shadow: 0 1px 4px #333333;
+    -moz-box-shadow: 0 1px 4px #333333;
+    box-shadow: 0 1px 4px #333333;
+    z-index: 3;
+}
+
+.cluster-body {
+    position: relative;
+    color: #111111;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:5px;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.cluster-body .title {
+    font-weight: bold;
+    color: #111111;
+    width: 180px;
+    margin-left: 1px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.cluster-body-collapsed {
+    position: relative;
+    color: #111111;
+    padding:10px;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.cluster-body-collapsed .title {
+    font-weight: bold;
+    color: #111111;
+    width: 159px;
+    margin-left: 1px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.cluster-action-container {
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    right: 5px;
+    text-align: right;
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-right: 3px;
+    z-index: 10;
+}
+
+.cluster-settings-menu {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    right: -141px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-box-shadow: 0 1px 4px #cccccc;
+    -moz-box-shadow: 0 1px 4px #cccccc;
+    box-shadow: 0 1px 4px #cccccc;
+    background-color: #ffffff;
+    z-index: 14;
+}
+
+.child-cards-container {
+    position: relative;
+    float:left;
+    margin-top: 3px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+    font-size:10px;
+    font-weight: normal;
+    color: #222222;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.child-cards-container img {
+    position: relative;
+    top: 3px;
+}
+
+#cluster-editable-title #editable-title-container {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.editable-title {
+    position: relative;
+    top: -1px;
+    font-weight: bold;
+    color: #111111;
+    padding: 0px;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    resize: none;
+}
+
+#cluster-editable-title .collapsed {
+    width: 150px;
+}
